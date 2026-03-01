@@ -1,0 +1,91 @@
+<% layout('/layouts/boilerplate') -%>
+
+    <div class="container my-4">
+      
+        <div class="row">
+          
+            <div class="col-md-8 offset-md-2">
+                <h1 class="mb-4">Edit Listing</h1>
+                <form action="/listings/<%= showlist._id %>?_method=put" method="post" class="needs-validation" enctype="multipart/form-data"
+                    novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="Title">Title</label>
+                        <input type="text" class="form-control" name="listing[title]" value="<%= showlist.title %>"
+                            id="Title" placeholder="Enter title" required />
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            please enter valid title
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Description">Description</label>
+                        <textarea class="form-control" name="listing[description]" id="Description"
+                            placeholder="Enter description" required><%= showlist.description %></textarea>
+
+                        <div class="invalid-feedback">
+                            please enter valid description
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label" for="Category">Category</label>
+                        <select class="form-control" name="listing[category]" id="Category" required>
+                            <option value="Mountains" <%= showlist.category === "Mountains" ? "selected" : "" %>>Mountains</option>
+                            <option value="Camping" <%= showlist.category === "Camping" ? "selected" : "" %>>Camping</option>
+                            <option value="Trending" <%= showlist.category === "Trending" ? "selected" : "" %>>Trending</option>
+                            <option value="Iconic cities" <%= showlist.category === "Iconic cities" ? "selected" : "" %>>Iconic cities</option>
+                            <option value="Farm" <%= showlist.category === "Farm" ? "selected" : "" %>>Farm</option>
+                            <option value="Arctic" <%= showlist.category === "Arctic" ? "selected" : "" %>>Arctic</option>
+                            <option value="Castles" <%= showlist.category === "Castles" ? "selected" : "" %>>Castles</option>
+                            <option value="Amazing Pools" <%= showlist.category === "Amazing Pools" ? "selected" : "" %>>Amazing Pools</option>
+                            <option value="House" <%= showlist.category === "House" ? "selected" : "" %>>House</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid category.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        Original image <br>
+                        <img src="<%= originalimageurl %>"  />
+                    </div>    
+                    <div class="mb-3">
+                        <label class="form-label" for="Image">Edit Image</label>
+                        <input type="file" class="form-control" name="listing[image][url]"
+                         id="Image" placeholder="upload new image" />
+                        <div class="invalid-feedback">
+                            Please enter a valid image link.
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label class="form-label" for="Price">Price</label>
+                            <input type="text" class="form-control" name="listing[price]" value="<%= showlist.price %>"
+                                id="Price" placeholder="Enter price" required />
+                            <div class="invalid-feedback">
+                                please enter valid price
+                            </div>
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label class="form-label" for="Country">Country</label>
+                            <input type="text" class="form-control" name="listing[country]"
+                                value="<%= showlist.country %>" id="Country" placeholder="Enter country" required />
+                            <div class="invalid-feedback">
+                                please enter valid country
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="Location">Location</label>
+                        <input type="text" class="form-control" name="listing[location]"
+                            value="<%= showlist.location %>" id="Location" placeholder="Enter location" required />
+                        <div class="invalid-feedback">
+                            enter valid location
+                        </div>
+                    </div>
+                    <button class="btn btn-dark edit-btn">Save Changes</button>
+                </form>
+            </div>
+        </div>
+    </div>

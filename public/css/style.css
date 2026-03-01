@@ -1,0 +1,117 @@
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+}
+#map {
+    height: 500px;
+    width: 100%;
+}
+.container {
+    flex: 1;
+}
+.navbar {
+   height: 5rem;
+   
+   transition: all 0.3s ease;
+}
+.expanded {
+    height: 12rem;
+}
+.flex-row {
+    display: flex;
+}
+.fa-compass {
+    color: #ff385c;
+    font-size: 2rem;
+}
+.nav-link {
+    color: #222222;
+}
+.f {
+    border-top: 1px solid #3a3a3a40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+    background-color: #ff355a9f;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i {
+    font-size: 1.2rem;
+    margin: 0.3rem;
+}
+.f-info-links a {
+    list-style: none;
+    color: #222222;
+    margin: 0.5rem;
+}
+.f-info-links:hover {
+    text-decoration: underline;
+}
+.card-link {
+    text-decoration: none;
+}
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+.noborder {
+    border: none;
+    width: 18rem;
+    object-fit: cover;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shows {
+    width: 50vw;
+    object-fit: cover;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 700px) {
+    .show {
+        width: 20rem;
+    }
+}
+.card-body {
+    padding: 0;
+}
+.card-img-top {
+    border-radius: 20px;
+    height: 18rem;
+}
+.card-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 600px) {
+    .card-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.add-btn, .edit-btn {
+    background-color: #ff385c;
+    border: none;
+}
+.add-btn:hover, .edit-btn:hover {
+    background-color: #ff385c;
+}

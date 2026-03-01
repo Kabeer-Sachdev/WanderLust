@@ -1,0 +1,72 @@
+[
+  {
+    "_id": "1",
+    "title": "Beautiful Mountain Cabin",
+    "description": "Cozy cabin with stunning mountain views",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400",
+      "filename": "mountain-cabin.jpg"
+    },
+    "price": 150,
+    "location": "Colorado Springs, USA",
+    "country": "USA",
+    "category": "cabin",
+    "owner": "user1"
+  },
+  {
+    "_id": "2",
+    "title": "Beachfront Luxury Villa",
+    "description": "Stunning beach villa with private pool",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1512207736139-6ea3e64cabf7?w=400",
+      "filename": "beach-villa.jpg"
+    },
+    "price": 250,
+    "location": "Malibu, California",
+    "country": "USA",
+    "category": "villa",
+    "owner": "user2"
+  },
+  {
+    "_id": "3",
+    "title": "Modern City Apartment",
+    "description": "Sleek apartment in the heart of the city",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400",
+      "filename": "city-apt.jpg"
+    },
+    "price": 180,
+    "location": "New York City, USA",
+    "country": "USA",
+    "category": "hotel",
+    "owner": "user3"
+  },
+  {
+    "_id": "4",
+    "title": "Tropical Island Bungalow",
+    "description": "Paradise bungalow surrounded by nature",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1520563537226-5b93016df10b?w=400",
+      "filename": "island-bungalow.jpg"
+    },
+    "price": 120,
+    "location": "Bora Bora, French Polynesia",
+    "country": "French Polynesia",
+    "category": "cabin",
+    "owner": "user1"
+  },
+  {
+    "_id": "5",
+    "title": "Historic European Castle",
+    "description": "Magnificent castle with centuries of history",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1531591437281-7fdf97b9d7a3?w=400",
+      "filename": "castle.jpg"
+    },
+    "price": 300,
+    "location": "Prague, Czech Republic",
+    "country": "Czech Republic",
+    "category": "mansion",
+    "owner": "user2"
+  }
+]

@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md bg-body border-bottom sticky-top">
+  <!-- <a class="nav-link ms-3"> <i class="fa-solid fa-bars " style=" font-size: 1.2rem;" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions""></i></a> -->
+    <div class=" container-fluid">
+
+      <a class="navbar-brand" href="/listings"><i class="fa-solid fa-compass"></i></a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/listings">Explore</a>
+          </li>
+         
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <a class="nav-link" href="/listings/new">Create new hotel</a>
+          <% if (!currentUser) { %>
+          <li class="nav-item">
+            <a class="nav-link" href="/signup"><b>SignUp</b></a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="/login"><b>Login</b></a>
+          </li>
+          <% } else { %>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/logout"><b>Logout</b></a>
+          </li>
+          <% } %>
+        </ul>
+      </div>
+      
+      </div>
+</nav>
